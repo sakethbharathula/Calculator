@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Boxes Layout</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f8ff; /* Light background color */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px; /* Gap between the boxes */
+        }
+
+        .box {
+            background-color: #fff;
+            border: 2px solid #ddd; /* Border around each box */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners for a smoother look */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 400px; /* Increased width for each box */
+            height: 650px; /* Increased height for each box */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Positions content between top and bottom */
+        }
+
+        .box img {
+            width: 100%; /* Make the image fill the box width */
+            height: 400px; /* Increased height for each image */
+            object-fit: contain; /* Ensures the entire image is visible within the specified dimensions */
+            border-radius: 5px; /* Optional: Rounded corners for the image */
+            margin-bottom: 10px;
+        }
+
+        .box h2 {
+            font-size: 40px;
+            margin: 10px 0; /* Space around the heading */
+            color: #333; /* Dark text color for the heading */
+        }
+
+        .box button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            align-self: center; /* Centers the button horizontally */
+        }
+
+        .box button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="Screenshot 2024-08-19 230141.png" alt="Image 1">
+            <h2>Calculator</h2>
+            <button onclick="location.href='new.html'">Click Here</button>
+        </div>
+        <div class="box">
+            <img src="Screenshot 2024-08-19 231517.png" alt="Image 2">
+            <h2>Array Operations</h2>
+            <button onclick="location.href='operations.html'">Click Here</button>
+        </div>
+        <div class="box">
+            <img src="Screenshot 2024-08-19 223659.png" alt="Image 3">
+            <h2>Object Manipulation</h2>
+            <button onclick="location.href='obj.html'">Click Here</button>
+        </div>
+    </div>
+</body>
+</html>
